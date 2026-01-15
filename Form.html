@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        h3{
+            text-align: center;
+            text-decoration: underline;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        form{
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 50px 20px;
+            width: 75%;
+            margin: auto;
+        }
+        input{
+            display: block;
+            margin: 10px;
+        }
+        button{
+            background-color: chartreuse;
+            width: 70px;
+            height: 30px;
+            border: transparent;
+            border-radius: 5px;
+            transition: all ease-in-out 0.3s;
+        }
+        button:hover{
+            transform: scale(1.25);
+            border-radius: 15px;
+        }
+        fieldset input{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h3>Javascript Form Illustration</h3>
+    <form action="">
+        <label for="fullname">Full name:</label>
+        <input type="text" id="fullname">
+        <label for="age">Age:</label>
+        <input type="number" id="age">
+        <fieldset>
+            <legend>Skills: Choose the languages you are proficient in</legend>
+            <label for="Javascript">Javascript: </label>
+            <input type="checkbox" id="Javascript"><br>
+            <label for="Python">Python: </label>
+            <input type="checkbox" id="Python">
+        </fieldset><br>
+        <button onclick="Myfunction()">Submit</button>
+    </form>
+    <script>
+        function Myfunction(){
+            let name = document.getElementById("fullname").value;
+            let age = document.getElementById("age").value;
+            let javascriptChecked = document.getElementById("Javascript").checked;
+            let pythonChecked = document.getElementById("Python").checked;
+            let skills;
+            
+            if(javascriptChecked && pythonChecked){
+                skills = "I am proficient in both Javascript and Python";
+            } 
+            else if(javascriptChecked){
+                skills = "I am proficient in Javascript only.";
+            }
+            else if(pythonChecked){
+                skills = "I am proficient in Python only.";
+            }
+            else{
+                skills = "I am not proficient in either Javascript or Python.";
+            }
+            
+            alert("My name is " + name + "\nI am " + age + " years old." + "\n" + skills)
+        }
+    </script>
+</body>
+</html>
