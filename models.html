@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="models styles.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="models.html">Models</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact us.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <h2 class="italianno-regular">Legendary motors</h2>
+        <div class="header-container">
+            <div class="card">
+                <img src="Images/Hyper cars/mclaren hypercar.jpg" alt="" loading="eager">
+            </div>
+            <div class="card">
+                <img src="Images/Sports cars/ford mustang.jpg" alt="" loading="eager">
+            </div>
+            <div class="card">
+                <img src="Images/Luxury cars/Audi rs7.jpg" alt="" loading="eager">
+            </div>
+            <div class="card">
+                <img src="Images/Saloon cars/Honda accord.jpg" alt="" loading="eager">
+            </div>
+            <div class="card">
+                <img src="Images/Family cars/Hyundai Santa Fe.jpg" alt="" loading="eager">
+            </div>
+            <div class="card">
+                <img src="Images/Offroad cars/Ford raptor.jpg" alt="" loading="eager">
+            </div>
+        </div>
+        <blockquote>
+            <h2 class="italianno-regular">Our Models</h2>
+            <p>We offer a wide range of vehicles to suit every need and preference.</p>
+            <p>We prioritize your experience with our cars; whether it is your first car, or the car that takes you to tie the knot with your beloved or the gift you bestow those dearest to you their dream car or when you feel the time to appreciate your endeavors in your work. We will be glad to be associated with your life in all moments.</p>
+        </blockquote>
+    </header>
+    <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="hypercars">Hypercars</button>
+            <button class="filter-btn" data-filter="sports-cars">Sports Cars</button>
+            <button class="filter-btn" data-filter="luxury">Luxury</button>
+            <button class="filter-btn" data-filter="saloon-cars">Saloon Cars</button>
+            <button class="filter-btn" data-filter="family-cars">Family Cars</button>
+            <button class="filter-btn" data-filter="offroad-cars">Offroad Cars</button>
+        </div>
+
+        <!-- Car Listings -->
+        <h3 class="italianno-regular">Hyper Cars</h3>
+        <div class="models-grid">
+            <div class="car-item" data-category="hypercars">
+                <img src="Images/Hyper cars/mclaren hypercar.jpg" alt="McLaren Hypercar">
+                <h3>McLaren Hypercar</h3>
+                <p>$1.5M | 0-60: 2.5s</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="hypercars">
+                <img src="Images/Hyper cars/ferrari hypercar.jpg" alt="Ferrari Hypercar">
+                <h3>Ferrari Laferrai</h3>
+                <p>$2M | 0-60: 2.2s</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="hypercars">
+                <img src="Images/Hyper cars/bugatti hypercar.jpg" alt="Ferrari Hypercar">
+                <h3>Bugatti Veryon Super Sport </h3>
+                <p>$5M | 0-60: 1.8s</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="hypercars">
+                <img src="Images/Hyper cars/pagani hypercar.jpg" alt="Ferrari Hypercar">
+                <h3>Pagani Zonda </h3>
+                3<p>$5M | 0-60: 2.0s</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+        </div>
+
+            <!-- Sports Cars -->
+        <h3 class="italianno-regular">Sports Cars</h3>
+        <div class="models-grid">
+            <div class="car-item" data-category="sports-cars">
+                <img src="Images/Sports cars/ford mustang.jpg" alt="Ford Mustang">
+                <h3>Ford Mustang</h3>
+                <p>$50K | 0-60: 3.5s</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="sports-cars">
+                <img src="Images/Sports cars/porshe.jpg" alt="Porshe 718 Carrera">
+                <h3>Porshe 718 Carrera</h3>
+                <p>$80K | 0-60: 3.1s</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="sports-cars">
+                <img src="Images/Sports cars/lamborghini sports.jpg" alt="Lamborghini Sesto Elemento">
+                <h3>Lamborghini Sesto Elemento</h3>
+                <p>$200K | 0-60: 2.9s</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="sports-cars">
+                <img src="Images/Sports cars/chervolet.jpg" alt="Chevrolet Camaro ZL1">
+                <h3>Chevrolet Camaro ZL1</h3>
+                <p>$70K | 0-60: 3.7s</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+        </div>
+
+            <!-- Luxury -->
+        <h3 class="italianno-regular">Luxury Cars</h3>
+        <div class="models-grid">
+            <div class="car-item" data-category="luxury">
+                <img src="Images/Luxury cars/Audi rs7.jpg" alt="Audi RS7">
+                <h3>Audi RS7</h3>
+                <p>$120K | 0-60: 3.1s</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="luxury">
+                <img src="Images/Luxury cars/black bentley.jpg" alt="Bentley Continental GT">
+                <h3>Bentley Continental GT</h3>
+                <p>$200K | 0-60: 3.6s</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="luxury">
+                <img src="Images/Luxury cars/mercedez mayback.jpg" alt="Mercedes-Benz Mayback">
+                <h3>Mercedes-Benz Mayback</h3>
+                <p>$350K | 0-60: 4.2s</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="luxury">
+                <img src="Images/Luxury cars/rolls royce.jpg" alt="Rolls-Royce Phantom">
+                <h3>Rolls-Royce Phantom</h3>
+                <p>$400K | 0-60: 5.2s</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+        </div>
+
+            <!-- Saloon Cars -->
+        <h3 class="italianno-regular">Saloon Cars</h3>
+        <div class="models-grid">
+            <div class="car-item" data-category="saloon-cars">
+                <img src="Images/Saloon cars/Honda accord.jpg" alt="Honda Accord">
+                <h3>Honda Accord</h3>
+                <p>$30K | 0-60: 5.5s</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="saloon-cars">
+                <img src="Images/Saloon cars/Kia Cerato (Forte).jpg" alt="Kia Cerato (Forte)">
+                <h3>Kia Cerato (Forte)</h3>
+                <p>$25K | 0-60: 6.0s</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="saloon-cars">
+                <img src="Images/Saloon cars/Toyata Corolla.jpg" alt="Toyota Corolla">
+                <h3>Toyota Corolla</h3>
+                <p>$20K | 0-60: 7.5s</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="saloon-cars">
+                <img src="Images/Saloon cars/Nissan Sentra.jpg" alt="Nissan Sentra">
+                <h3>Nissan Sentra</h3>
+                <p>$18K | 0-60: 8.2s</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+        </div>
+
+            <!-- Family Cars -->
+        <h3 class="italianno-regular">Family Cars</h3>
+        <div class="models-grid">
+            <div class="car-item" data-category="family-cars">
+                <img src="Images/Family cars/Hyundai Santa Fe.jpg" alt="Hyundai Santa Fe">
+                <h3>Hyundai Santa Fe</h3>
+                <p>$35K | Spacious family SUV</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="family-cars">
+                <img src="Images/Family cars/Toyota highlander.jpg" alt="Toyota Highlander">
+                <h3>Toyota Highlander</h3>
+                <p>$40K | Reliable family SUV</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="family-cars">
+                <img src="Images/Family cars/Honda CR-V.jpg" alt="Honda CR-V">
+                <h3>Honda CR-V</h3>
+                <p>$30K | Compact family SUV</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="family-cars">
+                <img src="Images/Family cars/Kia Sportage.jpg" alt="Kia Sportage">
+                <h3>Kia Sportage</h3>
+                <p>$38K | Versatile family SUV</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+        </div>
+
+            <!-- Offroad Cars -->
+        <h3 class="italianno-regular">Offroad Cars</h3>
+        <div class="models-grid">
+            <div class="car-item" data-category="offroad-cars">
+                <img src="Images/Offroad cars/Ford raptor.jpg" alt="Ford Raptor">
+                <h3>Ford Raptor</h3>
+                <p>$60K | Offroad beast</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="offroad-cars">
+                <img src="Images/Offroad cars/Jeep offroad.jpg" alt="Jeep Wrangler">
+                <h3>Jeep Wrangler</h3>
+                <p>$35K | Iconic offroad SUV</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="offroad-cars">
+                <img src="Images/Offroad cars/Toyota Hilux.jpg" alt="Toyota Hilux">
+                <h3>Toyota Hilux</h3>
+                <p>$45K | Versatile offroad truck</p>
+                <button class="cta-button">Purchase</button>
+            </div>
+            <div class="car-item" data-category="offroad-cars">
+                <img src="Images/Offroad cars/Nissan Prado.jpg" alt="Nissan Prado">
+                <h3>Nissan Prado</h3>
+                <p>$50K | Reliable offroad SUV</p>
+                <button class="cta-button">Purchase</button>   
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <!-- Branding/Logo Section -->
+            <div class="footer-section">
+                <h3>Legendary Motors</h3>
+                <p>Your premier destination for luxury and sports cars. Experience the thrill of the drive.</p>
+            </div>
+            
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Info Section -->
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><strong>Address:</strong> 123 Speed Lane, Car City, CA 90210</p>
+                <p><strong>Phone:</strong> (555) 123-4567</p>
+                <p><strong>Email:</strong> info@legendarymotors.com</p>
+                <p><strong>Hours:</strong> Mon-Fri 9AM-7PM, Sat 10AM-5PM</p>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2026 Legendary Motors. All rights reserved. Prices subject to change. Financing available through approved lenders. Not responsible for typographical errors.</p>
+            </div>
+        </div>
+</footer>
+</body>
+</html>
